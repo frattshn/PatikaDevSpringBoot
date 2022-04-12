@@ -1,0 +1,36 @@
+
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Templates</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <script th:src="@{/js/template.js}"></script>
+</head>
+<body class="container">
+<!--start codes-->
+
+
+<p th:text="${key_model1}"></p>
+<p th:text="${productList}"></p>
+<hr>
+
+<table class="table table-striped table-hover">
+    <tr th:each="temp:${productList}">
+        <td th:text="${temp.getProductID()}"></td>
+        <td th:text="${temp.getProductName()}"></td>
+        <td th:text="${temp.getProductPrice()}"></td>
+        <td th:if="${temp.getProductPrice()}>600" th:text="'Büyüktür'"></td>
+        <td th:unless="${temp.getProductPrice()}>600" th:text="'Küçüktür'"></td>
+    </tr>
+</table>
+
+
+
+<!--ends codes-->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
