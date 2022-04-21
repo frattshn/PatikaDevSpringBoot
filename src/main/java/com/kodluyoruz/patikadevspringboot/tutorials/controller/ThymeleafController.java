@@ -1,6 +1,6 @@
-package com.kodluyoruz.patikadevspringboot.controller;
+package com.kodluyoruz.patikadevspringboot.tutorials.controller;
 
-import com.kodluyoruz.patikadevspringboot.dto.ProductDto;
+import com.kodluyoruz.patikadevspringboot.tutorials.dto.ProductDto;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;

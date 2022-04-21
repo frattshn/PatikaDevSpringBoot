@@ -1,6 +1,6 @@
-package com.kodluyoruz.patikadevspringboot.controller;
+package com.kodluyoruz.patikadevspringboot.tutorials.controller;
 
-import com.kodluyoruz.patikadevspringboot.dto.TeacherDto;
+import com.kodluyoruz.patikadevspringboot.tutorials.dto.TeacherDto;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
