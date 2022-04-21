@@ -1,4 +1,4 @@
-package com.kodluyoruz.patikadevspringboot.entity;
+package com.kodluyoruz.patikadevspringboot.data.entity;
 
 
 import lombok.Builder;

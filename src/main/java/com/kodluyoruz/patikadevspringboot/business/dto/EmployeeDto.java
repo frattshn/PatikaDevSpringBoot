@@ -1,4 +1,4 @@
-package com.kodluyoruz.patikadevspringboot.dto;
+package com.kodluyoruz.patikadevspringboot.business.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
